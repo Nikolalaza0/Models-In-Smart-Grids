@@ -1,0 +1,203 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="14">
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="PROTECTEDSWITCH" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="PS1" />
+            <Property id="IDOBJ_MRID" value="1_PS" />
+            <Property id="IDOBJ_NAME" value="ProtectedSwitch1" />
+            <Property id="EQUIPMENT_AGGREGATE" value="0" />
+            <Property id="EQUIPMENT_NORMINSERVICE" value="0" />
+            <Property id="SWITCH_NORMALOPEN" value="0" />
+            <Property id="SWITCH_RATEDCURRENT" value="4" />
+            <Property id="SWITCH_RETAINED" value="0" />
+            <Property id="SWITCH_SWITCHONCOUNT" value="12" />
+            <Property id="SWITCH_SWITCHONDATE" value="637870068000000000" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="DISCONNECTOR" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="DN1" />
+            <Property id="IDOBJ_MRID" value="1_DN" />
+            <Property id="IDOBJ_NAME" value="Disconnector1" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORMINSERVICE" value="1" />
+            <Property id="SWITCH_NORMALOPEN" value="1" />
+            <Property id="SWITCH_RATEDCURRENT" value="5" />
+            <Property id="SWITCH_RETAINED" value="1" />
+            <Property id="SWITCH_SWITCHONCOUNT" value="33" />
+            <Property id="SWITCH_SWITCHONDATE" value="637869996000000000" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="OUTAGESCH" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="OS1" />
+            <Property id="IDOBJ_MRID" value="1_OS" />
+            <Property id="IDOBJ_NAME" value="OutageSchedule1" />
+            <Property id="BASICINTERVALSCH_STARTTIME" value="638082583320000000" />
+            <Property id="BASICINTERVALSCH_VALUE1MULTI" value="c" />
+            <Property id="BASICINTERVALSCH_VALUE1UNIT" value="A" />
+            <Property id="BASICINTERVALSCH_VALUE2MULTI" value="M" />
+            <Property id="BASICINTERVALSCH_VALUE2UNIT" value="J" />
+            <Property id="OUTAGESCH_PSR" value="0x00000002ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffe" type="OUTAGESCH" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="OS2" />
+            <Property id="IDOBJ_MRID" value="2_OS" />
+            <Property id="IDOBJ_NAME" value="OutageSchedule2" />
+            <Property id="BASICINTERVALSCH_STARTTIME" value="638186616000000000" />
+            <Property id="BASICINTERVALSCH_VALUE1MULTI" value="n" />
+            <Property id="BASICINTERVALSCH_VALUE1UNIT" value="Pa" />
+            <Property id="BASICINTERVALSCH_VALUE2MULTI" value="T" />
+            <Property id="BASICINTERVALSCH_VALUE2UNIT" value="Hz" />
+            <Property id="OUTAGESCH_PSR" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="IRREGULARTP" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="IRTP1" />
+            <Property id="IDOBJ_MRID" value="1_IRTP" />
+            <Property id="IDOBJ_NAME" value="IrregularTimePoint1" />
+            <Property id="IRREGULARTP_TIME" value="10" />
+            <Property id="IRREGULARTP_VALUE1" value="22" />
+            <Property id="IRREGULARTP_VALUE2" value="33" />
+            <Property id="IRREGULARTP_INTERVALSCH" value="0x00000003ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="IRREGULARTP" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="IRTP2" />
+            <Property id="IDOBJ_MRID" value="2_IRTP" />
+            <Property id="IDOBJ_NAME" value="IrregularTimePoint2" />
+            <Property id="IRREGULARTP_TIME" value="11" />
+            <Property id="IRREGULARTP_VALUE1" value="23" />
+            <Property id="IRREGULARTP_VALUE2" value="34" />
+            <Property id="IRREGULARTP_INTERVALSCH" value="0x00000003fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="CURVE" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="C1" />
+            <Property id="IDOBJ_MRID" value="1_C" />
+            <Property id="IDOBJ_NAME" value="Curve1" />
+            <Property id="CURVE_STYLE" value="constantYValue" />
+            <Property id="CURVE_XMULTI" value="c" />
+            <Property id="CURVE_XUNIT" value="deg" />
+            <Property id="CURVE_Y1MULTI" value="M" />
+            <Property id="CURVE_Y1UNIT" value="m" />
+            <Property id="CURVE_Y2MULTI" value="micro" />
+            <Property id="CURVE_Y2UNIT" value="deg" />
+            <Property id="CURVE_Y3MULTI" value="none" />
+            <Property id="CURVE_Y3UNIT" value="m" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffe" type="CURVE" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="C2" />
+            <Property id="IDOBJ_MRID" value="2_C" />
+            <Property id="IDOBJ_NAME" value="Curve2" />
+            <Property id="CURVE_STYLE" value="formula" />
+            <Property id="CURVE_XMULTI" value="d" />
+            <Property id="CURVE_XUNIT" value="degC" />
+            <Property id="CURVE_Y1MULTI" value="G" />
+            <Property id="CURVE_Y1UNIT" value="m2" />
+            <Property id="CURVE_Y2MULTI" value="micro" />
+            <Property id="CURVE_Y2UNIT" value="deg" />
+            <Property id="CURVE_Y3MULTI" value="none" />
+            <Property id="CURVE_Y3UNIT" value="m3" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="CURVEDATA" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="CD1" />
+            <Property id="IDOBJ_MRID" value="1_CD" />
+            <Property id="IDOBJ_NAME" value="CurveData1" />
+            <Property id="CURVEDATA_CURVE" value="0x00000005ffffffff" />
+            <Property id="CURVEDATA_XVALUE" value="12" />
+            <Property id="CURVEDATA_Y1VALUE" value="13" />
+            <Property id="CURVEDATA_Y2VALUE" value="14" />
+            <Property id="CURVEDATA_Y3VALUE" value="15" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffe" type="CURVEDATA" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="CD2" />
+            <Property id="IDOBJ_MRID" value="2_CD" />
+            <Property id="IDOBJ_NAME" value="CurveData2" />
+            <Property id="CURVEDATA_CURVE" value="0x00000005fffffffe" />
+            <Property id="CURVEDATA_XVALUE" value="15" />
+            <Property id="CURVEDATA_Y1VALUE" value="17" />
+            <Property id="CURVEDATA_Y2VALUE" value="17" />
+            <Property id="CURVEDATA_Y3VALUE" value="18" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffd" type="CURVEDATA" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="CD3" />
+            <Property id="IDOBJ_MRID" value="3_CD" />
+            <Property id="IDOBJ_NAME" value="CurveData3" />
+            <Property id="CURVEDATA_CURVE" value="0x00000005ffffffff" />
+            <Property id="CURVEDATA_XVALUE" value="18" />
+            <Property id="CURVEDATA_Y1VALUE" value="1" />
+            <Property id="CURVEDATA_Y2VALUE" value="1" />
+            <Property id="CURVEDATA_Y3VALUE" value="8" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffc" type="CURVEDATA" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="CD4" />
+            <Property id="IDOBJ_MRID" value="4_CD" />
+            <Property id="IDOBJ_NAME" value="CurveData4" />
+            <Property id="CURVEDATA_CURVE" value="0x00000005fffffffe" />
+            <Property id="CURVEDATA_XVALUE" value="28" />
+            <Property id="CURVEDATA_Y1VALUE" value="12" />
+            <Property id="CURVEDATA_Y2VALUE" value="12" />
+            <Property id="CURVEDATA_Y3VALUE" value="82" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000007ffffffff" type="REGULARINTERVALSCH" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="RIS1" />
+            <Property id="IDOBJ_MRID" value="1_RIS" />
+            <Property id="IDOBJ_NAME" value="RegularIntervalSchedule" />
+            <Property id="BASICINTERVALSCH_STARTTIME" value="637870068000000000" />
+            <Property id="BASICINTERVALSCH_VALUE1MULTI" value="p" />
+            <Property id="BASICINTERVALSCH_VALUE1UNIT" value="ohm" />
+            <Property id="BASICINTERVALSCH_VALUE2MULTI" value="n" />
+            <Property id="BASICINTERVALSCH_VALUE2UNIT" value="V" />
+            <Property id="REGULARINTERVALSCH_ENDTIME" value="637869960000000000" />
+            <Property id="REGULARINTERVALSCH_TIMESTEP" value="1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000008ffffffff" type="REGULARTIMEPOINT" />
+          <Properties>
+            <Property id="IDOBJ_ALIASNAME" value="RTP1" />
+            <Property id="IDOBJ_MRID" value="1_RTP" />
+            <Property id="IDOBJ_NAME" value="RegularTimePoint" />
+            <Property id="REGULARTIMEPOINT_SEQNUM" value="12" />
+            <Property id="REGULARTIMEPOINT_VALUE1" value="23" />
+            <Property id="REGULARTIMEPOINT_VALUE2" value="44" />
+            <Property id="REGULARTIMEPOINT_INTERVALSCH" value="0x00000007ffffffff" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>
